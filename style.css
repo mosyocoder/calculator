@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.calculator {
+	font-family: "Poppins";
+	border-radius: 10px;
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	margin-block-start: 2em;
+	max-inline-size: 22rem;
+	overflow: hidden;
+	color: hsl(202, 11%, 29%);
+}
+
+.calculatorOutput {
+	background: hsl(255, 100%, 100%);
+	font-size: 4.2rem;
+	height: 150px;
+	text-align: right;
+	border: none;
+	width: 95%;
+}
+.calculatorKeys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1px;
+	background: hsl(255, 100%, 100%);
+	padding: 0.5rem;
+}
+button {
+	background: hsl(210, 25%, 95%);
+	border: none;
+	padding-block-start: 1rem;
+	padding-block-end: 1rem;
+	padding-inline-end: 1.25rem;
+	padding-inline-start: 1.25rem;
+	font-size: 1.5rem;
+	inline-size: 70px;
+	block-size: 70px;
+	margin: 0.25rem;
+	border-radius: 40px;
+}
+
+button:active {
+	border: 2px dashed #000;
+}
+
+.calculatorKey:active,
+.calculatorKey:focus {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+	outline: none;
+}
+.operator {
+	background: hsl(208, 25%, 86%);
+}
+.calculatorKeyOperator:active {
+	background: hsl(208, 24%, 80%);
+}
+.enter {
+	grid-column: 4 / 5;
+	grid-row: 2 / span 4;
+	background: hsl(357, 100%, 72%);
+	height: auto;
+}
